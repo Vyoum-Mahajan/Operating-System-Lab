@@ -16,7 +16,7 @@ int main() {
 
 pid_t p = fork();
 
-if (p = 0) {
+if (p == 0) {
 
 printf("Child Running with PID: %d\n", getpid());
 
@@ -35,3 +35,4 @@ pid_t terminated_pid = wait(NULL);
 printf("Parent Terminated Child PID: %d\n", terminated_pid);
 }
 return 0 ;
+}
